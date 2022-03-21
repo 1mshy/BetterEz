@@ -1,6 +1,7 @@
 package com.imshy.mod;
 
 import net.minecraft.client.Minecraft;
+import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -14,7 +15,7 @@ import java.util.concurrent.Executors;
 @Mod(modid = BetterEz.MODID, version = BetterEz.VERSION)
 public class BetterEz
 {
-    public static final String MODID = "TauntMod";
+    public static final String MODID = "BetterEz";
     public static final String VERSION = "1.0";
     public static BetterEz instance;
     private final Minecraft mc = Minecraft.getMinecraft();
@@ -47,6 +48,6 @@ public class BetterEz
     private void registerAll()
     {
         MinecraftForge.EVENT_BUS.register(BetterEz.getInstance());
-        MinecraftForge.EVENT_BUS.register(new ChatMessage());
+        ClientCommandHandler.instance.registerCommand(new BetterEzCommand());
     }
 }

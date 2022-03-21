@@ -1,8 +1,8 @@
 [
 {
-  "modid": "TauntMod",
-  "name": "Taunt Mod",
-  "description": "Taunts your opponents when receiving hate",
+  "modid": "BetterEz",
+  "name": "Better Easy",
+  "description": "type /ez instead of ez to spam insults",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
